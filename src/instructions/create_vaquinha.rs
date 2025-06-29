@@ -16,7 +16,7 @@ pub fn handler(ctx: Context<CreateVaquinha>, name: String, description: String) 
 
     vaquinha.name = name;
     vaquinha.description = description;
-    vaquinha.amout_donated = (00.00 * 100.00) as u64; // Repretenta RS10,50 como 1050 centavos
+    vaquinha.amount_donated = (00.00 * 100.00) as u64; // Repretenta RS10,50 como 1050 centavos
     vaquinha.owner = creator.key();
 
     Ok(())

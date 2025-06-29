@@ -21,4 +21,8 @@ pub mod vaquinha_crypto {
     ) -> Result<()> {
         instructions::create_vaquinha::handler(ctx, name, description)
     }
+
+    pub fn donate(ctx: Context<Donate>, amount: u64) -> Result<()> {
+        instructions::donate::handler(ctx, amount)
+    }
 }

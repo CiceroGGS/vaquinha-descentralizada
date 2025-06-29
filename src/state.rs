@@ -4,6 +4,6 @@ use anchor_lang::prelude::*;
 pub struct Vaquinha {
     pub name: String,
     pub description: String,
-    pub amout_donated: u64,
+    pub amount_donated: u64,
     pub owner: Pubkey,
 }
